@@ -1,0 +1,4750 @@
+{
+	"info": {
+		"_postman_id": "5a7061e1-c8d5-4555-ba44-9fe986acdf0c",
+		"name": "project2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31982427"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "registerTeacher",
+					"item": [
+						{
+							"name": "required",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "1|AeI0ECGfDkPyuPkpLm5JUy5Y20Yoifes5hzFAYF378f508c6",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "kkhalid",
+											"type": "text"
+										},
+										{
+											"key": "phone",
+											"value": "0955357400",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123123",
+											"type": "text"
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/Teacher/add",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"Teacher",
+										"add"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "success",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "7|wCejWmN1HLZOWHiBn7QxIjnzqjCJZIvC7j07YuoSb4debe52",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "ahmad",
+											"type": "text"
+										},
+										{
+											"key": "phone",
+											"value": "0956787402",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "sadd@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "11123123",
+											"type": "text"
+										},
+										{
+											"key": "gender",
+											"value": "male",
+											"type": "text"
+										},
+										{
+											"key": "birth_date",
+											"value": "1995-06-15",
+											"type": "text"
+										},
+										{
+											"key": "experience_years",
+											"value": "5",
+											"type": "text"
+										},
+										{
+											"key": "work_days[]",
+											"value": "Sunday",
+											"type": "text"
+										},
+										{
+											"key": "work_days[]",
+											"value": "Tuesday",
+											"type": "text"
+										},
+										{
+											"key": "work_days[]",
+											"value": "Thursday",
+											"type": "text"
+										},
+										{
+											"key": "work_hours",
+											"value": "08:00-13:00",
+											"type": "text"
+										},
+										{
+											"key": "profile_image",
+											"type": "file",
+											"src": "/C:/Users/ASUS TUF/Desktop/product2.jpg"
+										},
+										{
+											"key": "certificate_file",
+											"type": "file",
+											"src": "/C:/Users/ASUS TUF/Desktop/Sahha Lac logo.pdf"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/Teacher/add",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"Teacher",
+										"add"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "uniqe",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "kkhalid",
+											"type": "text"
+										},
+										{
+											"key": "phone",
+											"value": "0955357402",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "khalid@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123123",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/TeacherRegister",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"TeacherRegister"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "email field",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "1|AeI0ECGfDkPyuPkpLm5JUy5Y20Yoifes5hzFAYF378f508c6",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "kkhalid",
+											"type": "text"
+										},
+										{
+											"key": "phone",
+											"value": "0955357402",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "khalidw1s",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123123",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/Teacher/add",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"Teacher",
+										"add"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "registerPerantStudent",
+					"item": [
+						{
+							"name": "succsse",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "1|lrmzhYI0DWuPsnUc8z8HqiGWDGIUou3phz2J3NQSb47e6911",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "kkhalid",
+											"type": "text"
+										},
+										{
+											"key": "phone",
+											"value": "0999999999",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "2523ad@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "12312322",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/Student/add",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"Student",
+										"add"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "email taken or phone",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "1|AeI0ECGfDkPyuPkpLm5JUy5Y20Yoifes5hzFAYF378f508c6",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "kkhal",
+											"type": "text"
+										},
+										{
+											"key": "phone",
+											"value": "0955357403",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "khali@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123123",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/Student/add",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"Student",
+										"add"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "field is required",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "phone",
+											"value": "0956357403",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "khi@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123123",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/StudentRegister",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"StudentRegister"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "phone field must be 10 digits",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "1|AeI0ECGfDkPyuPkpLm5JUy5Y20Yoifes5hzFAYF378f508c6",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "asdsd",
+											"type": "text"
+										},
+										{
+											"key": "phone",
+											"value": "0956357",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "khi@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123123",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/Student/add",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"Student",
+										"add"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "login",
+					"item": [
+						{
+							"name": "success",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "kkhals",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "phone",
+											"value": "0956357",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "email",
+											"value": "admin@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "password",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/login",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "field is required",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "email",
+											"value": "khassli@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/login",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "do not match",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "email",
+											"value": "khassli@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "122222",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/login",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "User not found",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "email",
+											"value": "khassssli@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "122222",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/login",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"login"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "ClassRoom",
+			"item": [
+				{
+					"name": "addClassRoom",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|AeI0ECGfDkPyuPkpLm5JUy5Y20Yoifes5hzFAYF378f508c6",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_name",
+									"value": "teacherUser",
+									"type": "text"
+								},
+								{
+									"key": "class_name",
+									"value": "fras",
+									"type": "text"
+								},
+								{
+									"key": "max_students",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "level",
+									"value": "KG3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/class/add",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"class",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ShowClassRoom",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|AeI0ECGfDkPyuPkpLm5JUy5Y20Yoifes5hzFAYF378f508c6",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/class/show/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"class",
+								"show",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "class/get",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|AeI0ECGfDkPyuPkpLm5JUy5Y20Yoifes5hzFAYF378f508c6",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/class/get",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"class",
+								"get"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "class / update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|AeI0ECGfDkPyuPkpLm5JUy5Y20Yoifes5hzFAYF378f508c6",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "class_name",
+									"value": "secandclassed",
+									"type": "text"
+								},
+								{
+									"key": "max_students",
+									"value": "240",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/class/update/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"class",
+								"update",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "class/delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|AeI0ECGfDkPyuPkpLm5JUy5Y20Yoifes5hzFAYF378f508c6",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/class/delete/3",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"class",
+								"delete",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getClassroomByTeacher",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/schedule/getClassroomByTeacher",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"schedule",
+								"getClassroomByTeacher"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Teacher",
+			"item": [
+				{
+					"name": "Teacher/get",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "2|dyDO5PqQjMuGM5JzIjrcFurRAvBQjCHoFcgVbDe08761ee6e",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/Teacher/get",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"Teacher",
+								"get"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Teacher/show",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "2|dyDO5PqQjMuGM5JzIjrcFurRAvBQjCHoFcgVbDe08761ee6e",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/Teacher/show/5",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"Teacher",
+								"show",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Teacher/delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|AeI0ECGfDkPyuPkpLm5JUy5Y20Yoifes5hzFAYF378f508c6",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/Teacher/delete/11",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"Teacher",
+								"delete",
+								"11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|AeI0ECGfDkPyuPkpLm5JUy5Y20Yoifes5hzFAYF378f508c6",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/Teacher/delete/6",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"Teacher",
+								"delete",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Teacher/update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|AeI0ECGfDkPyuPkpLm5JUy5Y20Yoifes5hzFAYF378f508c6",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Ahmad Ali\",\r\n    \"email\": \"ahmad@example.com\",\r\n    \"phone\": \"0912345678\",\r\n    \"password\": \"newpassword123\",\r\n    \"gender\": \"male\",\r\n    \"birth_date\": \"1990-05-15\",\r\n    \"experience_years\": 5,\r\n    \"work_days\": [\"Monday\", \"Wednesday\", \"Friday\"],\r\n    \"work_hours\": \"09:00-14:00\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/Teacher/update/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"Teacher",
+								"update",
+								"2"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getUnassignedTeachers",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "6|L40sFTEm5WeXQ0BtIj60VwYUDrjQDL1z9VNU38Jv06713773",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/Teacher/getUnassignedTeachers",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"Teacher",
+								"getUnassignedTeachers"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PerantStudents",
+			"item": [
+				{
+					"name": "Student/get",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|AeI0ECGfDkPyuPkpLm5JUy5Y20Yoifes5hzFAYF378f508c6",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/Student/get",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"Student",
+								"get"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Student/show",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|AeI0ECGfDkPyuPkpLm5JUy5Y20Yoifes5hzFAYF378f508c6",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/Student/show/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"Student",
+								"show",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Student/delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|AeI0ECGfDkPyuPkpLm5JUy5Y20Yoifes5hzFAYF378f508c6",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/Student/delete/10",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"Student",
+								"delete",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Student/update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|AeI0ECGfDkPyuPkpLm5JUy5Y20Yoifes5hzFAYF378f508c6",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "asdasd",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0955357400",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "password",
+									"value": "123123",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/Student/update/10",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"Student",
+								"update",
+								"10"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "enrollment",
+			"item": [
+				{
+					"name": "add enrollment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "GfDkPyuPkpLm5JUy5Y20Yoifes5hzFAYF378f508c6",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "phone",
+									"value": "0955354555",
+									"type": "text"
+								},
+								{
+									"key": "student_name",
+									"value": "ali",
+									"type": "text"
+								},
+								{
+									"key": "birth_date",
+									"value": "2000/2/2",
+									"type": "text"
+								},
+								{
+									"key": "class_name",
+									"value": "fras",
+									"type": "text"
+								},
+								{
+									"key": "level",
+									"value": "KG3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/Enrollment/add",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"Enrollment",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllEnrollment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "4|UlZz0NWFmqpP4iCzNVsju9mHS4k0UhX24sGENEPcd7563faf",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/Enrollment/get",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"Enrollment",
+								"get"
+							],
+							"query": [
+								{
+									"key": "name_student",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Enrollment/show",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|AeI0ECGfDkPyuPkpLm5JUy5Y20Yoifes5hzFAYF378f508c6",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/Enrollment/show/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"Enrollment",
+								"show",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Enrollment/delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|AeI0ECGfDkPyuPkpLm5JUy5Y20Yoifes5hzFAYF378f508c6",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/Enrollment/delete/11",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"Enrollment",
+								"delete",
+								"11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Enrollment/update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|AeI0ECGfDkPyuPkpLm5JUy5Y20Yoifes5hzFAYF378f508c6",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "phone",
+									"value": "0955354555",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "student_name",
+									"value": "ali ahmad",
+									"type": "text"
+								},
+								{
+									"key": "birth_date",
+									"value": "2000/2/2",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "class_name",
+									"value": "fras",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "level",
+									"value": "KG3",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/Enrollment/update/9",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"Enrollment",
+								"update",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "by-level",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|AeI0ECGfDkPyuPkpLm5JUy5Y20Yoifes5hzFAYF378f508c6",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "omar",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0955357400",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "password",
+									"value": "123123",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/Student/by-level?level=KG1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"Student",
+								"by-level"
+							],
+							"query": [
+								{
+									"key": "level",
+									"value": "KG1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getParentEnrollment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "4|Den849wgm84JLVSVbDY5stFNyYqxap0L7zihKFuw8652fec0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/Enrollment/getParentEnrollment",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"Enrollment",
+								"getParentEnrollment"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "lesson",
+			"item": [
+				{
+					"name": "lessons add without attachments",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|wPscS3V6MKxcek3U2y9coalwM0r2KArpVE6k8CGb521e0b10",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": " Introduction to Physics",
+									"type": "text"
+								},
+								{
+									"key": "subject",
+									"value": " Science",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": " Basic concepts of motion and force",
+									"type": "text"
+								},
+								{
+									"key": "date",
+									"value": " 2025-07-01",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/lessons/add",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"lessons",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "lessons/get",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|wPscS3V6MKxcek3U2y9coalwM0r2KArpVE6k8CGb521e0b10",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": " Introduction to Physics",
+									"type": "text"
+								},
+								{
+									"key": "subject",
+									"value": " Science",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": " Basic concepts of motion and force",
+									"type": "text"
+								},
+								{
+									"key": "date",
+									"value": " 2025-07-01",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/lessons/get",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"lessons",
+								"get"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "lessons/show/1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|wPscS3V6MKxcek3U2y9coalwM0r2KArpVE6k8CGb521e0b10",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": " Introduction to Physics",
+									"type": "text"
+								},
+								{
+									"key": "subject",
+									"value": " Science",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": " Basic concepts of motion and force",
+									"type": "text"
+								},
+								{
+									"key": "date",
+									"value": " 2025-07-01",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/lessons/show/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"lessons",
+								"show",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/lessons/update/",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|0acYaZwLHNpwzjSH6NbpVWDWBIW9vx8ui0q4F4e79dad34ce",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": " Physics",
+									"type": "text"
+								},
+								{
+									"key": "subject",
+									"value": " Science",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "description",
+									"value": " Basic concepts of motion and force",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "date",
+									"value": " 2025-07-01",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/lessons/update/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"lessons",
+								"update",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|0acYaZwLHNpwzjSH6NbpVWDWBIW9vx8ui0q4F4e79dad34ce",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": " Physics",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "subject",
+									"value": " Science",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "description",
+									"value": " Basic concepts of motion and force",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "date",
+									"value": " 2025-07-01",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/lessons/delete/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"lessons",
+								"delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/lessons/add with attachments",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|wPscS3V6MKxcek3U2y9coalwM0r2KArpVE6k8CGb521e0b10",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": " Introduction to Physics",
+									"type": "text"
+								},
+								{
+									"key": "subject",
+									"value": " Science",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": " Basic concepts of motion and force",
+									"type": "text"
+								},
+								{
+									"key": "date",
+									"value": " 2025-07-01",
+									"type": "text"
+								},
+								{
+									"key": "attachments[]",
+									"type": "file",
+									"src": "/C:/Users/ASUS TUF/Desktop/Gemilac_plus.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/lessons/add",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"lessons",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "lessons/today",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|wPscS3V6MKxcek3U2y9coalwM0r2KArpVE6k8CGb521e0b10",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/lessons/today",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"lessons",
+								"today"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "upcoming-week",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|wPscS3V6MKxcek3U2y9coalwM0r2KArpVE6k8CGb521e0b10",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/lessons/upcoming-week",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"lessons",
+								"upcoming-week"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "lessons/by-subject",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|wPscS3V6MKxcek3U2y9coalwM0r2KArpVE6k8CGb521e0b10",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/lessons/subject?subject=Science",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"lessons",
+								"subject"
+							],
+							"query": [
+								{
+									"key": "subject",
+									"value": "Science"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getLessonsByClassroom",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/lessons/getLessonsByClassroom/4",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"lessons",
+								"getLessonsByClassroom",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "attachments/1/delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "3|odbQ5w2Ug4Ii5JkaZJuihY0oPuj1usIGvAmBaWHW59cf5810",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/attachments/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"attachments",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Schedule",
+			"item": [
+				{
+					"name": "schedule/create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|A3BErOGfgiIoNMDBKslh5fjOrZxjdDGRAHyIT0aSfa9ffb46",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"classroom_id\": 1,\r\n  \"schedules\": [\r\n    {\r\n      \"day\": \"Sunday\",\r\n      \"period_1\": \"Math\",\r\n      \"period_2\": \"English\",\r\n      \"period_3\": \"Science\"\r\n    },\r\n    {\r\n      \"day\": \"Monday\",\r\n      \"period_1\": \"Physics\",\r\n      \"period_2\": \"Math\",\r\n      \"period_3\": \"History\"\r\n    },\r\n    {\r\n      \"day\": \"Tuesday\",\r\n      \"period_1\": \"Biology\",\r\n      \"period_2\": \"Chemistry\",\r\n      \"period_3\": \"Geography\"\r\n    },\r\n    {\r\n      \"day\": \"Wednesday\",\r\n      \"period_1\": \"English\",\r\n      \"period_2\": \"Math\",\r\n      \"period_3\": \"Art\"\r\n    },\r\n    {\r\n      \"day\": \"Thursday\",\r\n      \"period_1\": \"Islamic\",\r\n      \"period_2\": \"Arabic\",\r\n      \"period_3\": \"Quran\"\r\n    }\r\n  ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/schedule/create",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"schedule",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "schedule/update/",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|A3BErOGfgiIoNMDBKslh5fjOrZxjdDGRAHyIT0aSfa9ffb46",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"classroom_id\": 1,\r\n  \"schedules\": [\r\n    {\r\n      \"day\": \"Sunday\",\r\n      \"period_1\": \"Math\",\r\n      \"period_2\": \"English\",\r\n      \"period_3\": \"Science\"\r\n    },\r\n    {\r\n      \"day\": \"Monday\",\r\n      \"period_1\": \"Physics\",\r\n      \"period_2\": \"Math\",\r\n      \"period_3\": \"History\"\r\n    },\r\n    {\r\n      \"day\": \"Tuesday\",\r\n      \"period_1\": \"Biology\",\r\n      \"period_2\": \"Chemistry\",\r\n      \"period_3\": \"Geography\"\r\n    },\r\n    {\r\n      \"day\": \"Wednesday\",\r\n      \"period_1\": \"English\",\r\n      \"period_2\": \"Math\",\r\n      \"period_3\": \"Art\"\r\n    },\r\n    {\r\n      \"day\": \"Thursday\",\r\n      \"period_1\": \"1\",\r\n      \"period_2\": \"23\",\r\n      \"period_3\": \"fasasd\"\r\n    }\r\n  ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/schedule/update/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"schedule",
+								"update",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "schedule/getAll",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "schedule/showforTeacher",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "9|lyxE1IZP1haEZ2tDb2lTQ0GtOOYNrpD2PMdFd1kFcfa2d586",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/schedule/getClassroomByTeacher",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"schedule",
+								"getClassroomByTeacher"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getSchedulesByClassroom",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "9|lyxE1IZP1haEZ2tDb2lTQ0GtOOYNrpD2PMdFd1kFcfa2d586",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/schedule/getSchedulesByClassroom/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"schedule",
+								"getSchedulesByClassroom",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "lesson by enrollment",
+			"item": [
+				{
+					"name": "lessons/by-enrollment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|dmKCufMf7PBKQaELTOhAFHwrn7KyLGafa5az8cmnb2181109",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/lessons/by-enrollment/5",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"lessons",
+								"by-enrollment",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "by-enrollment/week",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|wPscS3V6MKxcek3U2y9coalwM0r2KArpVE6k8CGb521e0b10",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/lessons/by-enrollment/5/week",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"lessons",
+								"by-enrollment",
+								"5",
+								"week"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "lessons/by-enrollment/today",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|wPscS3V6MKxcek3U2y9coalwM0r2KArpVE6k8CGb521e0b10",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/lessons/by-enrollment/5/today",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"lessons",
+								"by-enrollment",
+								"5",
+								"today"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "scheduale by enrollment",
+			"item": [
+				{
+					"name": "schedule/today/2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|A3BErOGfgiIoNMDBKslh5fjOrZxjdDGRAHyIT0aSfa9ffb46",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"classroom_id\": 1,\r\n  \"schedules\": [\r\n    {\r\n      \"day\": \"Sunday\",\r\n      \"period_1\": \"Math\",\r\n      \"period_2\": \"English\",\r\n      \"period_3\": \"Science\"\r\n    },\r\n    {\r\n      \"day\": \"Monday\",\r\n      \"period_1\": \"Physics\",\r\n      \"period_2\": \"Math\",\r\n      \"period_3\": \"History\"\r\n    },\r\n    {\r\n      \"day\": \"Tuesday\",\r\n      \"period_1\": \"Biology\",\r\n      \"period_2\": \"Chemistry\",\r\n      \"period_3\": \"Geography\"\r\n    },\r\n    {\r\n      \"day\": \"Wednesday\",\r\n      \"period_1\": \"English\",\r\n      \"period_2\": \"Math\",\r\n      \"period_3\": \"Art\"\r\n    },\r\n    {\r\n      \"day\": \"Thursday\",\r\n      \"period_1\": \"Islamic\",\r\n      \"period_2\": \"Arabic\",\r\n      \"period_3\": \"Quran\"\r\n    }\r\n  ]\r\n}\r\n"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/schedule/today/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"schedule",
+								"today",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/tomorrow/2",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|A3BErOGfgiIoNMDBKslh5fjOrZxjdDGRAHyIT0aSfa9ffb46",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/schedule/tomorrow/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"schedule",
+								"tomorrow",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Activities",
+			"item": [
+				{
+					"name": "Slct",
+					"item": [
+						{
+							"name": "slct/generate/1",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "3|gbhAzTh4POqvohQVKO4maehtyhbfKopcAJzQfet4d76d0f0d",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/slct/generate/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"slct",
+										"generate",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "slct/evaluate",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "3|gbhAzTh4POqvohQVKO4maehtyhbfKopcAJzQfet4d76d0f0d",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"target_letters\": [\"A\", \"M\", \"C\"],\r\n  \"cancelled_letters_1\": [\"A\", \"M\", \"D\", \"C\"],\r\n  \"cancelled_letters_2\": [\"C\", \"A\", \"M\"],\r\n  \"time1\": 60,\r\n  \"time2\": 55,\r\n  \"activity_id\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/slct/evaluate/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"slct",
+										"evaluate",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "imagesSTT",
+					"item": [
+						{
+							"name": "images",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "3|Od4GPKeEBQdCsK8zd4EJMwcauFjbPZwMQDiiww2Gb48c20d7",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/images/2",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"images",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "analyze-audio",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "audio",
+											"type": "file",
+											"src": "/C:/Users/ASUS TUF/Desktop/test.mp3"
+										},
+										{
+											"key": "expected_words[]",
+											"value": "شجرة",
+											"type": "text"
+										},
+										{
+											"key": "expected_words[]",
+											"value": "بيت",
+											"type": "text"
+										},
+										{
+											"key": "expected_words[]",
+											"value": "تفاحة",
+											"type": "text"
+										},
+										{
+											"key": "activity_id",
+											"value": "7",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/analyze-audio/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"analyze-audio",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "numberTest",
+					"item": [
+						{
+							"name": "generate-numbers",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "3|I90DQSCHOLuuoK4lMMsDuU8MmoM3mG0K9UxK782u8df93c1c",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/generate-numbers",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"generate-numbers"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "submit-answer",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "4|Ly97KttrO0nCvCK3UoWvLuRA4bzCCL8k4pgvO3sm6a04c43d",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"original_numbers\": [3, 7, 2],\r\n  \"numbers\": [3, 2, 7]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/submit-answer/2",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"submit-answer",
+										"2"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "ordershapes",
+					"item": [
+						{
+							"name": "order_shapes",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "1|AeI0ECGfDkPyuPkpLm5JUy5Y20Yoifes5hzFAYF378f508c6",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"displayed_ids\": [1, 3, 2, 4],\r\n\"target_ids\": [1 ],\r\n\"selected_ids\" :  [1],\r\n\"response_time\": 10,\r\n\"activity_id\":7\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/order_shapes/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"order_shapes",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "difference between Images",
+					"item": [
+						{
+							"name": "difference",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "1|AeI0ECGfDkPyuPkpLm5JUy5Y20Yoifes5hzFAYF378f508c6",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"displayed_ids\": [1, 3, 2, 4],\r\n\"target_ids\": [1 ],\r\n\"selected_ids\" :  [1],\r\n\"response_time\": 10,\r\n\"activity_id\":7\r\n}"
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/difference",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"difference"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "difference/evaluate",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "raven",
+					"item": [
+						{
+							"name": "raven/get-question/1",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "4|AWMDEafDpnA5UnwmzjRXqcVmtXDiW7TFtrxhHMFl291d2ac3",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/raven/get-question/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"raven",
+										"get-question",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "raven/send-answer/1",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"activity_id\": 19,\r\n  \"answers\": {\r\n    \"1\": 2,\r\n    \"2\": 3,\r\n    \"3\": 1,\r\n    \"4\": 4,\r\n    \"5\": 1\r\n  }\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/raven/send-answer/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"raven",
+										"send-answer",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Add-one-out",
+					"item": [
+						{
+							"name": "classify/generate/1",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "4|1oGQN3ZnZmfkBnnyzMdx4nB4dyxMx7ZR2tnSXZRQe7dbd56e",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/classify/generate/3",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"classify",
+										"generate",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "classify/evaluate/1",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "3|Od4GPKeEBQdCsK8zd4EJMwcauFjbPZwMQDiiww2Gb48c20d7",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"activity_id\": 16,\r\n  \"items\": [\r\n        \"🍎\",\r\n        \"🍌\",\r\n        \"🍊\",\r\n        \"🐶\"],\r\n  \"selected\": \"🐶\",\r\n  \"correct_answer\": \"🐶\",\r\n  \"time_taken\": 12.5,\r\n  \"click_times\": [1.2]\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/classify/evaluate/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"classify",
+										"evaluate",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "size_order",
+					"item": [
+						{
+							"name": "size-order/start/1",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "3|B8w9HmcbbcasupabZWFJZuOjc2m7u4qB0HRb0IXn46a1a298",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "kkhalid",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "asnda n jnandjamsdjaddnkk nc ",
+											"type": "text"
+										},
+										{
+											"key": "due_date",
+											"value": "2025/2/2",
+											"type": "text"
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/size-order/start/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"size-order",
+										"start",
+										"1"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "size-order/submit/1",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "3|B8w9HmcbbcasupabZWFJZuOjc2m7u4qB0HRb0IXn46a1a298",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"activity_id\": 22,\r\n    \"set_id\": 2,\r\n    \"user_order\": [\r\n        \"TS_1.png\",\r\n        \"TM_1.png\",\r\n        \"TL_1.png\"\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/size-order/submit/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"size-order",
+										"submit",
+										"1"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "maze",
+					"item": [
+						{
+							"name": "maze/start/1",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "3|B8w9HmcbbcasupabZWFJZuOjc2m7u4qB0HRb0IXn46a1a298",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"activity_id\": 22,\r\n    \"set_id\": 2,\r\n   \"selected_order\" : [0,2,1],\r\n   \"elapsed_time_ms\": 12\r\n}"
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/maze/start/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"maze",
+										"start",
+										"1"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "New Request",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{       \r\n    \"activity_id\": 25,\r\n    \"child_choice\": 2, \r\n        \"correct_path\": 2,\r\n        \"time_taken\": 3\r\n    }\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/maze/submit/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"maze",
+										"submit",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "DashBord",
+			"item": [
+				{
+					"name": "Studentcount",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/Student/count",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"Student",
+								"count"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getClassCount",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|AeI0ECGfDkPyuPkpLm5JUy5Y20Yoifes5hzFAYF378f508c6",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/class/getClassCount",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"class",
+								"getClassCount"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TeacherCount",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "6|L40sFTEm5WeXQ0BtIj60VwYUDrjQDL1z9VNU38Jv06713773",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/Teacher/getTeacherCount",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"Teacher",
+								"getTeacherCount"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "HomeWorks",
+			"item": [
+				{
+					"name": "homeworks/add",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "3|B8w9HmcbbcasupabZWFJZuOjc2m7u4qB0HRb0IXn46a1a298",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "kkhalid",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "asnda n jnandjamsdjaddnkk nc ",
+									"type": "text"
+								},
+								{
+									"key": "due_date",
+									"value": "2025/2/2",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/homeworks/add",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"homeworks",
+								"add"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "homeworks/show/1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "3|B8w9HmcbbcasupabZWFJZuOjc2m7u4qB0HRb0IXn46a1a298",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/homeworks/show/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"homeworks",
+								"show",
+								"1"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetByClass/2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "3|B8w9HmcbbcasupabZWFJZuOjc2m7u4qB0HRb0IXn46a1a298",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/homeworks/GetByClass/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"homeworks",
+								"GetByClass",
+								"2"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update/{id}",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "3|B8w9HmcbbcasupabZWFJZuOjc2m7u4qB0HRb0IXn46a1a298",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "asdasda",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "asnda n jnandjamsdjaddnkk nc ",
+									"type": "text"
+								},
+								{
+									"key": "due_date",
+									"value": "2025/2/2",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/homeworks/update/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"homeworks",
+								"update",
+								"1"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "homeworks/students/{enrollmentId}",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "3|B8w9HmcbbcasupabZWFJZuOjc2m7u4qB0HRb0IXn46a1a298",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/homeworks/students/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"homeworks",
+								"students",
+								"1"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "3|B8w9HmcbbcasupabZWFJZuOjc2m7u4qB0HRb0IXn46a1a298",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/homeworks/delete/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"homeworks",
+								"delete",
+								"1"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetTeacherHomeworks",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "3|B8w9HmcbbcasupabZWFJZuOjc2m7u4qB0HRb0IXn46a1a298",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "kkhalid",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "asnda n jnandjamsdjaddnkk nc ",
+									"type": "text"
+								},
+								{
+									"key": "due_date",
+									"value": "2025/2/2",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/homeworks/GetTeacherHomeworks",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"homeworks",
+								"GetTeacherHomeworks"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Attendances",
+			"item": [
+				{
+					"name": "teacher/students",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "3|odbQ5w2Ug4Ii5JkaZJuihY0oPuj1usIGvAmBaWHW59cf5810",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/teacher/students",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"teacher",
+								"students"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "teacher/attendance",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "3|B8w9HmcbbcasupabZWFJZuOjc2m7u4qB0HRb0IXn46a1a298",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"absents\": [4,5]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/teacher/attendance",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"teacher",
+								"attendance"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "وضع طالب معين بتاريخ معين",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "3|B8w9HmcbbcasupabZWFJZuOjc2m7u4qB0HRb0IXn46a1a298",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/attendance/student/4?date=2025-09-01",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"attendance",
+								"student",
+								"4"
+							],
+							"query": [
+								{
+									"key": "date",
+									"value": "2025-09-01"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "غيابات عند الاستاذ بتاريخ معين",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/attendance/classroom?date=2025-09-01",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"attendance",
+								"classroom"
+							],
+							"query": [
+								{
+									"key": "date",
+									"value": "2025-09-01"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "جميع الغيابات بتارخ معين في كل الصفوف",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "3|B8w9HmcbbcasupabZWFJZuOjc2m7u4qB0HRb0IXn46a1a298",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/absencesByDate/?date=2025-09-01",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"absencesByDate",
+								""
+							],
+							"query": [
+								{
+									"key": "date",
+									"value": "2025-09-01"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ExpartSystem",
+			"item": [
+				{
+					"name": "expert/start",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/expert/start",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"expert",
+								"start"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "expert/answer",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "3|Od4GPKeEBQdCsK8zd4EJMwcauFjbPZwMQDiiww2Gb48c20d7",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"session_id\": \"5e1d2d47-e2a1-4cf0-aa41-1034bcea0247\",\r\n  \"ident\": \"si_q2\",\r\n  \"answer\": \"أكيد نعم\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/expert/answer",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"expert",
+								"answer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "expert/start",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/expert/start",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"expert",
+								"start"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "reports",
+			"item": [
+				{
+					"name": "report",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "4|1oGQN3ZnZmfkBnnyzMdx4nB4dyxMx7ZR2tnSXZRQe7dbd56e",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/generate/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"generate",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "admin",
+			"value": "",
+			"type": "string",
+			"disabled": true
+		},
+		{
+			"key": "teacher",
+			"value": "",
+			"type": "string",
+			"disabled": true
+		},
+		{
+			"key": "student",
+			"value": "",
+			"type": "string",
+			"disabled": true
+		},
+		{
+			"key": "token",
+			"value": "",
+			"type": "string"
+		}
+	]
+}

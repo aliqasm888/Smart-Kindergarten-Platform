@@ -1,0 +1,6 @@
+.env
+vendor/
+node_modules/
+project2/vendor/
+project2/node_modules/
+project2/storage/firebase_credentials.json
