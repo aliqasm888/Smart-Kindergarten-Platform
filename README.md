@@ -1,92 +1,101 @@
 # Smart Kindergarten Platform
 
-##  Overview
-Smart Kindergarten Platform is an AI-powered system designed to enhance early childhood education by combining backend management with intelligent analysis tools. The platform supports teachers, parents, and administrators by providing real-time insights into children's attention, behavior, and cognitive performance.
+## Overview
+Smart Kindergarten Platform is an integrated system designed for kindergarten education and management. It combines a Laravel-based backend with Python-powered intelligent components to support academic organization, child interaction, and preliminary behavioral analysis.
 
-It integrates a Laravel-based backend with Python AI models to deliver data-driven evaluation, interactive learning, and early behavioral screening.
-
----
-
-##  Key Features
-
-###  Education Management System
-- Manage students, classes, and activities
-- Track attendance and performance
-- Role-based access control (Admin / Teacher / Parent)
-
-###  AI-Based Attention & Behavior Analysis
-- Analyze children's focus and engagement levels
-- Evaluate cognitive performance using machine learning models
-- Provide data-driven insights for teachers and parents
-
-###  NLP Chatbot for Early Screening
-- Interactive chatbot for parent communication
-- Supports early behavioral assessment through guided questions
-- Provides recommendations based on user input
-
-###  Speech-to-Text Integration
-- Converts children’s speech into text
-- Helps evaluate communication and language skills
-
-###  Interactive Learning Games
-- Educational games to improve focus and engagement
-- Tracks user interaction and performance
-
-###  Recommendation System
-- Suggests personalized activities for children
-- Helps improve attention and learning outcomes
+The platform is intended for use by **administrators, teachers, parents, and children**, and provides tools for managing classes, lessons, schedules, homework, attendance, and educational activities. In addition, it includes interactive games and intelligent features that help monitor children's attention, focus, and behavioral indicators through structured analysis.
 
 ---
 
-##  Technologies Used
+## Key Features
+
+### Education Management
+- Manage students, classes, lessons, and schedules
+- Organize homework, attendance, and academic activities
+- Support role-based access for different user types
+
+### Multi-Role System
+The platform supports multiple user roles, including:
+- **Administrator**: manages users, academic structure, and system operations
+- **Teacher**: monitors students, attendance, lessons, and educational activities
+- **Parent**: follows the child’s progress and accesses guidance tools
+- **Child**: interacts with educational games and learning activities
+
+### AI-Based Attention and Focus Analysis
+- Analyze children’s interaction with educational games
+- Estimate indicators related to attention, focus, and distraction
+- Provide supportive insights based on recorded performance
+
+### Knowledge-Based Parent Guidance
+- Includes a chatbot-style knowledge-based component for parent interaction
+- Uses structured questions to support preliminary behavioral screening
+- Provides confidence-based guidance related to autism-related indicators
+
+### Speech-to-Text Support
+- Supports speech-to-text in selected educational activities
+- Helps process spoken input in child-oriented tasks
+
+### Interactive Educational Games
+- Provides learning games designed for kindergarten students
+- Tracks interaction and performance during activities
+
+### Recommendation Support
+- Suggests suitable activities based on child interaction and performance
+- Supports personalized educational follow-up
+
+---
+
+## Technologies Used
 
 ### Backend
 - Laravel (PHP)
 - RESTful APIs
-- Authentication & RBAC
+- Authentication and Role-Based Access Control (RBAC)
 
-### AI & Data Processing
+### Intelligent Components
 - Python
 - Machine Learning
 - Natural Language Processing (NLP)
+- Knowledge-Based System (KBS)
 
-### Tools & Libraries
+### Tools and Libraries
 - MySQL
 - TensorFlow / PyTorch
 - OpenCV
 
 ---
 
-##  System Architecture
-The platform follows a modular architecture:
-- Laravel backend handles API requests, authentication, and data management
-- Python AI modules process behavioral and cognitive analysis
-- Frontend (client-side) communicates via REST APIs
+## System Architecture
+The platform follows a modular structure:
+- **Laravel backend** manages data, APIs, authentication, roles, and academic workflows
+- **Python modules** handle intelligent analysis, chatbot logic, and behavioral processing
+- Client applications communicate with the backend through REST APIs
 
 ---
 
-##  Use Cases
-- Monitoring children's attention and behavior in real-time
-- Supporting teachers with performance insights
-- Assisting parents with early detection of behavioral issues
-- Enhancing engagement through interactive learning tools
+## Use Cases
+- Managing kindergarten students, classes, and schedules
+- Monitoring children’s academic and activity-based performance
+- Supporting parents with preliminary behavioral guidance
+- Using educational games as part of child interaction and observation
+- Providing teachers with structured follow-up tools
 
 ---
 
-##  Demo
+## Demo
 You can watch the system demo here:  
-https://drive.google.com/file/d/1SQUaKEI6mQ--QOUSolAqBYdsihG5iRss/view?usp=sharing
+[Smart Kindergarten Platform Demo](https://drive.google.com/file/d/1SQUaKEI6mQ--QOUSolAqBYdsihG5iRss/view?usp=sharing)
 
 ---
 
-##  Future Improvements
-- Real-time video-based attention tracking
-- Mobile application integration
-- Advanced deep learning models for behavior analysis
-- Dashboard analytics for long-term progress tracking
+## Future Improvements
+- Extended reporting and analytics dashboards
+- Mobile application support
+- More advanced behavioral analysis models
+- Additional educational games and activity types
 
 ---
 
-## 👨‍💻 Author
-Ali Kasem  
+## Author
+**Ali Kasem**  
 Backend & AI Developer
