@@ -1,5 +1,11 @@
 # Smart Kindergarten Platform
+---
 
+## Demo
+You can watch the system demo here:  
+[Smart Kindergarten Platform Demo](https://drive.google.com/file/d/1SQUaKEI6mQ--QOUSolAqBYdsihG5iRss/view?usp=sharing)
+
+---
 ## Overview
 Smart Kindergarten Platform is an integrated system designed for kindergarten education and management. It combines a Laravel-based backend with Python-powered intelligent components to support academic organization, child interaction, and preliminary behavioral analysis.
 
@@ -80,13 +86,7 @@ The platform follows a modular structure:
 - Using educational games as part of child interaction and observation
 - Providing teachers with structured follow-up tools
 
----
 
-## Demo
-You can watch the system demo here:  
-[Smart Kindergarten Platform Demo](https://drive.google.com/file/d/1SQUaKEI6mQ--QOUSolAqBYdsihG5iRss/view?usp=sharing)
-
----
 
 ## Future Improvements
 - Extended reporting and analytics dashboards
